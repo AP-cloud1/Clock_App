@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="clock">Clock</button>
+            <button class="tab-btn" data-tab="alarm">Alarm</button>
+            <button class="tab-btn" data-tab="stopwatch">Stopwatch</button>
+            <button class="tab-btn" data-tab="timer">Timer</button>
+            <button class="tab-btn" data-tab="study">Study Session</button>
+        </div>
+
+        <div class="tab-content active" id="clock">
+            <div class="clock-container">
+                <div class="time" id="current-time">00:00:00</div>
+                <div class="date" id="current-date">Monday, January 1</div>
+                <button class="customize-toggle">
+                    <i class="fas fa-paint-brush"></i> Customize Clock
+                </button>
+                <div class="customize-section hidden">
+                    <h3>Customize Clock</h3>
+                    <div class="color-picker">
+                        <label>Clock Color:</label>
+                        <input type="color" id="clockColor" value="#ffffff">
+                    </div>
+                    <div class="color-picker">
+                        <label>Background Color:</label>
+                        <input type="color" id="clockBackground" value="#000000">
+                    </div>
+                    <div class="font-selector">
+                        <label>Font Size:</label>
+                        <input type="range" id="fontSize" min="20" max="100" value="60">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="alarm">
+            <div class="alarm-container">
+                <input type="time" id="alarmTime">
+                <button id="setAlarm">Set Alarm</button>
+                <div id="activeAlarms"></div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="stopwatch">
+            <div class="stopwatch-container">
+                <div class="time" id="stopwatch-display">00:00:00</div>
+                <div class="controls">
+                    <button id="startStopwatch">Start</button>
+                    <button id="pauseStopwatch">Pause</button>
+                    <button id="resetStopwatch">Reset</button>
+                </div>
+                <div id="laps"></div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="timer">
+            <div class="timer-container">
+                <div class="timer-setup">
+                    <input type="number" id="hours" placeholder="HH" min="0" max="23">
+                    <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                    <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+                </div>
+                <div class="time" id="timer-display">00:00:00</div>
+                <div class="controls">
+                    <button id="startTimer">Start</button>
+                    <button id="pauseTimer">Pause</button>
+                    <button id="resetTimer">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="study">
+            <div class="study-container">
+                <div class="study-clocks">
+                    <div class="study-clock">
+                        <h3>Total Time</h3>
+                        <div class="time" id="total-time">00:00:00</div>
+                    </div>
+                    <div class="study-clock">
+                        <h3>Study Time</h3>
+                        <div class="time" id="study-time">00:00:00</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="startStudy">Start Session</button>
+                    <button id="pauseStudy">Take Break</button>
+                    <button id="resumeStudy">Resume</button>
+                    <button id="endStudy">End Session</button>
+                </div>
+                <div id="study-summary"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
