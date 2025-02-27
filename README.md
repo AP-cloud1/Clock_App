@@ -11,13 +11,13 @@ A modern **Web-Based Clock Application** that includes a **Stopwatch, Study Sess
 
 ## 🚀 Features
 <br>
-✅ **Clock** - Displays the current time with a beautiful UI  
-✅ **Stopwatch** - Start, pause, reset, and record laps  
-✅ **Study Session Watch** - Tracks your focused study/work sessions  
-✅ **Timer** - Set countdowns with alerts when time is up  
-✅ **Alarm** - Set and manage alarms with sound notifications  
-✅ **Responsive Design** - Works on desktops, tablets, and mobile devices  
-✅ **Modern UI** - Stylish and user-friendly interface  
+✅ **Clock** - Displays the current time with a beautiful UI  <br>
+✅ **Stopwatch** - Start, pause, reset, and record laps  <br>
+✅ **Study Session Watch** - Tracks your focused study/work sessions  <br>
+✅ **Timer** - Set countdowns with alerts when time is up  <br>
+✅ **Alarm** - Set and manage alarms with sound notifications  <br>
+✅ **Responsive Design** - Works on desktops, tablets, and mobile devices  <br>
+✅ **Modern UI** - Stylish and user-friendly interface  <br>
 <br>
 ---
 <br>
